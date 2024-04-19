@@ -1,0 +1,29 @@
+.employee-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employee-list li {
+  margin-bottom: 10px;
+}
+
+.employee-list li:hover {
+  background-color: #f5f5f5;
+}
+
+.employee-list .employee-name {
+  font-weight: bold;
+}
+
+.employee-list button {
+  margin-top: 8px;
+  padding: 5px 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-list button:hover {
+  background-color: #0069d9;
+}

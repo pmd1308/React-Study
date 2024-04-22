@@ -1,0 +1,24 @@
+// Project thats impplements a lybrary management system thats includes a CRUD operations in mySQL database, a GUI using swing, caching techniques and functionality for generate a CSV file.
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.sql.*;
+import java.io.*;
+
+public class LibraryManagementSystemGUI extends JFrame {
+	// Parameters
+    private Connection conn;
+    private JTextArea textArea;
+
+	public LibraryManagementSystemGUI() {
+		connectToDatabase();
+
+		// GUI windows
+      setTitle("Library Management System");
+      setSize(400, 300);
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setLayout(new BorderLayout());
+      textArea = new JTextArea();
+      JScrollPane scrollPane = new JScrollPane(textArea);
+      add(scrollPane, Bord
